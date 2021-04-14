@@ -17,8 +17,7 @@ def draw_little_heart():
 
 
 def draw_setup():
-    turtle.setup(width=900, height=600)
-    turtle.color('red', 'pink')
+    #turtle.color('red', 'pink')
     turtle.pensize(15)
     #turtle.speed(2000)
 
@@ -27,18 +26,20 @@ def draw_setup():
 
 def draw_left():
     turtle.hideturtle()
+    turtle.color('red')
     turtle.goto(0,-180)
     turtle.showturtle()
     turtle.down()
     turtle.speed(2000)
     turtle.begin_fill()
+    turtle.color('black')
     turtle.left(140)
     turtle.forward(224)
-
     draw_little_heart()
 
 
 def draw_right():
+    turtle.color('black')
     turtle.left(120)
 
     draw_little_heart()
@@ -53,6 +54,7 @@ def draw_right():
 
 
 def draw_words():
+    turtle.color('red')
     # sheng
     write((-150, 30), (-160, 10))
     write((-155, 20), (-105, 20))
@@ -88,17 +90,16 @@ def draw_words():
     turtle.goto((130, -30))
     write((120, -10), (110, -30))
     write((160, -10), (170, -30))
-
     turtle.up()
 
 
 def draw_person(person):
     turtle.hideturtle()
-    turtle.color('black', 'pink')
+    turtle.color('red')
     time.sleep(1)
     turtle.goto(180, -180)
     turtle.showturtle()
-    turtle.write(person, font=(20, 25), align="center", move=True)
+    turtle.write(person, font=(20, 25), align="right", move=True)
 
 
 person = input('送给谁: ')

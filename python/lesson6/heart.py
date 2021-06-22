@@ -5,7 +5,6 @@ print()
 
 
 
-#-*-coding: utf-8-*-
 import time
 
 def print_picture(words):

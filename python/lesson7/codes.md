@@ -5,6 +5,14 @@ name = input("你叫什么名字啊? ")
 print(f"你好, {name}, 很高兴认识你!")
 ```
 
+# 再加一个问题
+```python
+word = input("> ")
+
+if word == "How old are you?":
+    print("I am 18!")
+```
+
 # 追加一个问题
 
 ```python

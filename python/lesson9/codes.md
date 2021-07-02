@@ -86,3 +86,13 @@ for i in range(360):
     t.forward(1)
     t.right(1)
 ```
+
+# 一个粗糙点的圆
+```python
+import turtle
+t = turtle.Turtle() # 得到小乌龟
+
+for i in range(10):
+    t.forward(36)
+    t.right(36)
+```

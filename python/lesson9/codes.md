@@ -1,34 +1,56 @@
-# 初始化
+# 改变背景颜色
 ```python
 import turtle
-t = turtle.Turtle() # 得到小乌龟
-```
 
-# 画直线
-```python
-import turtle
-t = turtle.Turtle() # 得到小乌龟
+turtle.Screen().bgcolor("blue")
 
+t = turtle.Turtle() # 得到小乌龟
 t.forward(100)
 ```
 
-# 转向
-
+# 修改画笔颜色
 ```python
 import turtle
 t = turtle.Turtle() # 得到小乌龟
 
+t.pencolor("green")
 t.forward(100)
+```
 
-t.left(90)
+# 修改画笔粗细
+```python
+import turtle
+t = turtle.Turtle() # 得到小乌龟
 
+t.pensize(5)
+t.forward(100)
+```
+
+# 填充颜色
+```python
+import turtle
+t = turtle.Turtle() # 得到小乌龟
+
+t.begin_fill()
+
+t.forward(100)
 t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+
+t.end_fill()
 ```
 
-# 画方块
+# 改变填充颜色
 ```python
 import turtle
 t = turtle.Turtle() # 得到小乌龟
+
+t.fillcolor("orange")
+t.begin_fill()
 
 t.forward(100)
 t.right(90)
@@ -37,44 +59,8 @@ t.right(90)
 t.forward(100)
 t.right(90)
 t.forward(100)
-```
 
-# 左转画方块
-```python
-import turtle
-t = turtle.Turtle() # 得到小乌龟
-
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-```
-
-# 画三角形
-```python
-import turtle
-t = turtle.Turtle() # 得到小乌龟
-
-t.forward(100)
-t.left(120)
-t.forward(100)
-t.left(120)
-t.forward(100)
-```
-
-# 画直角等腰三角形
-```python
-import turtle
-t = turtle.Turtle() # 得到小乌龟
-
-t.forward(141)
-t.left(135)
-t.forward(100)
-t.left(90)
-t.forward(100)
+t.end_fill()
 ```
 
 # 画圆
@@ -82,17 +68,14 @@ t.forward(100)
 import turtle
 t = turtle.Turtle() # 得到小乌龟
 
+t.fillcolor("red")
+t.pensize(3)
+t.pencolor("blue")
+t.begin_fill()
+
 for i in range(360):
     t.forward(1)
     t.right(1)
-```
 
-# 一个粗糙点的圆
-```python
-import turtle
-t = turtle.Turtle() # 得到小乌龟
-
-for i in range(10):
-    t.forward(36)
-    t.right(36)
+t.end_fill()
 ```

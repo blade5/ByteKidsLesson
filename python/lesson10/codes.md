@@ -18,6 +18,21 @@ for i in range(5):
 t.end_fill()
 ```
 
+# 画多个圆
+
+```python
+import turtle
+s = turtle.getscreen()
+t = turtle.Turtle()
+
+number = 10 # number为可以把360整除的数
+
+for i in range(number):
+    t.circle(100)
+
+    t.right(360 / number)
+```
+
 # 画彩虹
 
 ```python

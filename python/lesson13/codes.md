@@ -1,3 +1,4 @@
+```python
 import turtle - 画图库
 # 设置背景
 bg = turtle.Screen() //得到屏幕对象bg
@@ -71,4 +72,4 @@ turtle.color("black") #设置颜色
 turtle.color("pink") #设置颜色
 
 turtle.write("Happy Birthday 王老师!", None, None, "24pt bold") #写文字
-
+```

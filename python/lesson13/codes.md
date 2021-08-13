@@ -1,8 +1,9 @@
 ```python
-import turtle - 画图库
+import turtle # 画图库
 # 设置背景
-bg = turtle.Screen() //得到屏幕对象bg
-bg.bgcolor("black") //背景颜色
+
+bg = turtle.Screen() #得到屏幕对象bg
+bg.bgcolor("black") #背景颜色
 
 # Bottom Line 1
 turtle.penup() #停止画笔
